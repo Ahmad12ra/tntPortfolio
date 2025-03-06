@@ -1,0 +1,243 @@
+.home-page-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 20px);
+  width: 100%;
+  padding-bottom: 90px ; 
+}
+
+.middle-part-home-page-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px
+}
+
+@media (max-width: 992px) {
+  .middle-part-home-page-main-container {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .home-page-editor-picture-main-container {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .editor-image-main-container {
+    border-radius: 194px !important;
+    height: 171px !important;
+  }
+
+  .editor-image {
+    width: 160px !important;
+  }
+
+  .home-page-editor-information {
+    order: 2;
+  }
+
+  /* Move the right element to the top */
+  .home-page-editor-picture-main-container {
+    order: 1;
+  }
+}
+
+.home-page-editor-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+}
+
+.about-person-middle-part-home-page {
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-person-middle-part-home-page span {
+  color: var(--secondary-color);
+}
+
+.bottom-part-information-about-person-job {
+  color: white;
+  opacity: 0.9;
+  font-size: 19px;
+}
+
+.bottom-part-home-page-contact-types {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.contact-type-bottom-part-inner {
+  border: 1px solid var(--secondary-color);
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.contact-type-bottom-part-inner:hover {
+  background-color: var(--secondary-color);
+  color: black;
+  transition: 0s;
+}
+
+.home-page-editor-picture-main-container {
+  width: 500px;
+  height: 500px;
+  background-color: var(--main-background-color);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-editor-picture-main-container::after {
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  background: conic-gradient(
+    from 0deg,
+    var(--third-color),
+    var(--third-color) 9%,
+    transparent 9%,
+    transparent 13%,
+    var(--third-color) 14%,
+    var(--third-color) 15%,
+    transparent 15%,
+    transparent 20%,
+    var(--third-color) 20%,
+    var(--third-color) 25%,
+    transparent 25%,
+    transparent 29%,
+    var(--third-color) 30%,
+    var(--third-color) 31%,
+    transparent 31%,
+    transparent 36%,
+    var(--third-color) 36%,
+    var(--third-color) 41%,
+    transparent 41%,
+    transparent 45%,
+    var(--third-color) 46%,
+    var(--third-color) 47%,
+    transparent 47%,
+    transparent 52%,
+    var(--third-color) 52%,
+    var(--third-color) 57%,
+    transparent 57%,
+    transparent 61%,
+    var(--third-color) 62%,
+    var(--third-color) 63%,
+    transparent 63%,
+    transparent 68%,
+    var(--third-color) 68%,
+    var(--third-color) 73%,
+    transparent 73%,
+    transparent 77%,
+    var(--third-color) 78%,
+    var(--third-color) 79%,
+    transparent 79%,
+    transparent 84%,
+    var(--third-color) 84%,
+    var(--third-color) 89%,
+    transparent 89%,
+    transparent 93%,
+    var(--third-color) 94%,
+    var(--third-color) 95%,
+    transparent 95%,
+    transparent 100%
+  );
+  animation: rotate 50s linear infinite; /* Fixed animation property */
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); /* Include translate in the keyframes */
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); /* Include translate in the keyframes */
+  }
+}
+
+.editor-image-main-container {
+  position: relative;
+  border-radius: 194px;
+  height: 415px;
+  overflow: hidden;
+}
+
+.editor-image {
+  width: 391px;
+  transform: translateY(-25px);
+  position: relative;
+}
+
+.home-page-bottom-part-information-main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .home-page-bottom-part-information-main-container {
+        flex-direction: column;
+    }
+}
+
+.bottom-part-information-inner-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+}
+
+.number-inner-inner-info-bottom-part-home-page {
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.text-infor-inner-inner-info-bottom-part-home-page {
+  color: #ffffffe3;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-type-home-page {
+    font-size: 20px;
+}
+
+.email-copied {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    pointer-events: none;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.2s;
+}

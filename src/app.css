@@ -1,0 +1,60 @@
+:root {
+  --main-background-color: #1c1b22;
+  --secondary-color: #01fe9d;
+  --third-color: #3aeaba;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--main-background-color);
+  min-height: 100vh;
+  overflow-X: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Medium screens */
+@media (min-width: 577px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+
+/* Extra-large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
