@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/tntPortfolio/static/css/main.5f03de48.css",
+    "main.js": "/tntPortfolio/static/js/main.1e4e2da0.js",
+    "static/js/488.d6a4740c.chunk.js": "/tntPortfolio/static/js/488.d6a4740c.chunk.js",
+    "static/media/editorImage.png": "/tntPortfolio/static/media/editorImage.da72053aa6559c01902f.png",
+    "static/media/fa-solid-900.ttf": "/tntPortfolio/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/tntPortfolio/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/tntPortfolio/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/tntPortfolio/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/tntPortfolio/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/tntPortfolio/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/tntPortfolio/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/tntPortfolio/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/tntPortfolio/index.html",
+    "main.5f03de48.css.map": "/tntPortfolio/static/css/main.5f03de48.css.map",
+    "main.1e4e2da0.js.map": "/tntPortfolio/static/js/main.1e4e2da0.js.map",
+    "488.d6a4740c.chunk.js.map": "/tntPortfolio/static/js/488.d6a4740c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f03de48.css",
+    "static/js/main.1e4e2da0.js"
+  ]
+}

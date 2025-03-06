@@ -9,6 +9,8 @@ import "./css/all.css";
 import "./app.css";
 
 function App() {
+
+  console.log()
   
   return (
       <BrowserRouter>
@@ -17,7 +19,7 @@ function App() {
           <Route path="/longs" element={<LongsComp />} />
           <Route path="/shorts" element={<ShortsComp />} />
           <Route path="/prices" element={<PricesComp />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
   );
