@@ -23,7 +23,7 @@ export default function HomePage() {
           <div className="home-page-editor-information">
             <div className="job-type-home-page">Video Editor</div>
             <div className="about-person-middle-part-home-page">
-              Hello I'm <br /> <span> Ahmed Magid</span>
+              Hello I'm <br /> <span> Ahmed Alsayed</span>
             </div>
             <div className="bottom-part-information-about-person-job">
               I excel at video editing <br /> as I have many experinces in that

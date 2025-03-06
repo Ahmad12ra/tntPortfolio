@@ -1,0 +1,82 @@
+.bottom-nav-main-container {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    background-color: white;
+    z-index: 3;
+    transition: 0.2s;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+    align-items: center;
+    transition: 0.2s;
+    
+}
+
+.go-down {
+    bottom: -100%;
+}
+
+.bottom-content-bottom-nav-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.second-trasition-bottom-nav,
+.third-transition-bottom-nav {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: 0.2s;
+    height: 0%;
+}
+
+.second-trasition-bottom-nav {
+    background-color: var(--secondary-color);
+}
+
+.third-transition-bottom-nav {
+    background-color: var(--main-background-color);
+}
+
+.bottom-nav-navigation-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    font-weight: bold;
+}
+
+.bottom-nav-navigation-content-active {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.bottom-nav-navigation-content-me {
+    color: black;
+    background-color: var(--secondary-color);
+    position: relative;
+    font-weight: bold;
+    padding: 7px;
+    z-index: 3;
+    border-radius: 10px;
+}
