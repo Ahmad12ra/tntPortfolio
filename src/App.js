@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import HomePage from "./components/home_page/js/home";
 import ErrorPage from "./components/error_page/js/error";
 import LongsComp from "./components/longs/js/longs";
@@ -13,15 +13,15 @@ function App() {
   console.log()
   
   return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/longs" element={<LongsComp />} />
           <Route path="/shorts" element={<ShortsComp />} />
           <Route path="/prices" element={<PricesComp />} />
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
