@@ -52,7 +52,7 @@ export default function TopNav(props) {
       <div ref={bottomNavTrap} className="bottom-nav-trap-overlay"></div>
       <BottomNav show={showBottomNavState} pageNumber={props.pageNumber} goDown={bottomNavGoDown} />
       <div className="top-nav-logo-main-container">
-        <span className="logo-name">Ahmed</span>
+        <span className="logo-name">TNT</span>
         <span className="dot-after-logo-name">
           <i class="fa-solid fa-circle"></i>
         </span>

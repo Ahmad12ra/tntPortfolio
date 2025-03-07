@@ -51,7 +51,7 @@ export default function HomePage() {
             <div className="text-infor-inner-inner-info-bottom-part-home-page">years of <br/> experince</div>
           </div>
           <div className="bottom-part-information-inner-info">
-            <div className="number-inner-inner-info-bottom-part-home-page">60+</div>
+            <div className="number-inner-inner-info-bottom-part-home-page">100+</div>
             <div className="text-infor-inner-inner-info-bottom-part-home-page">projects <br/> completed</div>
           </div>
           <div className="bottom-part-information-inner-info">
@@ -61,6 +61,10 @@ export default function HomePage() {
           <div className="bottom-part-information-inner-info">
             <div className="number-inner-inner-info-bottom-part-home-page">20M+</div>
             <div className="text-infor-inner-inner-info-bottom-part-home-page">total <br/> channels subscribers</div>
+          </div>
+          <div className="bottom-part-information-inner-info">
+            <div className="number-inner-inner-info-bottom-part-home-page">150M+</div>
+            <div className="text-infor-inner-inner-info-bottom-part-home-page">total <br/> views</div>
           </div>
         </div>
       </div>
