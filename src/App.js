@@ -5,6 +5,7 @@ import LongsComp from "./components/longs/js/longs";
 import ShortsComp from "./components/shorts/js/shorts";
 import PricesComp from "./components/prices/js/prices";
 import { useEffect, useState, useRef, createContext } from "react";
+import shortenNumber from "./components/shortenNumber";
 import "./css/all.css";
 import "./app.css";
 export const UseContextValues = createContext();
@@ -53,9 +54,10 @@ function App() {
         const response = await fetch(url, options);
         const result = await response.json();
         setFetchingResult(value => (value+1));
-        const views = result.items[0].statistics.viewCount
-        const likes = result.items[0].statistics.likeCount
-        setState({views, likes});
+        const views = shortenNumber(Number(result.items[0].statistics.viewCount));
+        const likes = shortenNumber(Number(result.items[0].statistics.likeCount));
+        const thumbnail = result.items[0].snippet.thumbnails.maxres.url;
+        setState({views, likes, thumbnail});
       } catch (error) {
         console.error(error);
       }
@@ -71,7 +73,8 @@ function App() {
       try {
         const response = await fetch(url, options);
         const result = await response.json();
-        const subscribers = result.items[0].statistics.subscriberCount;
+        console.log(result)
+        const subscribers = shortenNumber(Number(result.items[0].statistics.subscriberCount));
         setState({subscribers})
       } catch (error) {
         console.error(error);
