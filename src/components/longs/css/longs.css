@@ -40,11 +40,6 @@
     z-index: 2;
 }
 
-.video-holder-main-container:hover .vieo-status-part-inner-video-holder {
-  border: 2px solid var(--secondary-color);
-  transition: 0s;
-}
-
 .vieo-part-inner-video-holder {
   width: 240px;
   height: 135px;
@@ -64,10 +59,9 @@
   right: 0;
   position: absolute;
   background-color: #252525;
-  border: 2px solid #6f6f6f;
+  border: 2px solid var(--secondary-color);
   color: white;
   border-radius: 10px;
-  transition: 0.2s;
 }
 
 .right-part-container-video-status-inner {
@@ -96,7 +90,8 @@
 }
 
 .right-part-inner-count {
-  color: var(--third-color) !important;
+  color: white !important;
+  font-weight: bold;
 }
 
 .bottom-part-subscribers-main-container {

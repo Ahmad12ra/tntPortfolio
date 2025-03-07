@@ -12,7 +12,6 @@ export const UseContextValues = createContext();
 
 function App() {
   const pageTransMainContainer = useRef(null);
-  const [triggerPageTransAnimation, setTriggerPageTransAnimation] = useState(0);
   const [beterVideo, setBeterVideo] = useState({});
   const [uryFirstVideo, setUryFirstVideo] = useState({});
   const [urySecondVideo, setUrySecondVideo] = useState({});
@@ -23,26 +22,23 @@ function App() {
   const [gamingCenterSubs, setGamingCenterSubs] = useState({});
   const [urySubs, setUrySubs] = useState({});
   const [fetchingResult, setFetchingResult] = useState(0);
+  const [transDelayTime, setTransDelaytime] = useState(0);
 
-  function pageTransition() {
+  useEffect(() => setTransDelaytime(500), [])
+
+  function pageTransitionUp() {
     Array.from(pageTransMainContainer.current.children).forEach((ele, ind) => {
-      setTimeout(() => (ele.style.cssText = "height: 100%"), ind * 40);
+      setTimeout(() => (ele.style.cssText = "height: 100%"), ind * 20);
     });
-
-    setTimeout(() => {
-      Array.from(pageTransMainContainer.current.children).forEach(
-        (ele, ind) => {
-          setTimeout(() => (ele.style.cssText = "height: 0%"), ind * 40);
-        }
-      );
-    }, 1360);
   }
 
-  useEffect(() => {
-    if (triggerPageTransAnimation > 0) {
-      pageTransition();
-    }
-  }, [triggerPageTransAnimation]);
+  function pageTransitionDown() {
+      Array.from(pageTransMainContainer.current.children).forEach(
+        (ele, ind) => {
+          setTimeout(() => (ele.style.cssText = "height: 0%"), ind * 20);
+        }
+      );
+  }
 
   async function getVideoDetails(videoId, setState) {
       const url =
@@ -101,9 +97,7 @@ function App() {
   return (
     <>
       <UseContextValues.Provider
-        value={{ 
-          triggerPageTransAnimation, 
-          setTriggerPageTransAnimation,
+        value={{
           beterVideo,
           uryFirstVideo,
           urySecondVideo,
@@ -114,7 +108,9 @@ function App() {
           urySubs,
           gamingCenterSubs,
           fetchingResult,
-          pageTransition
+          pageTransitionUp,
+          pageTransitionDown,
+          transDelayTime
         }}
       >
         <HashRouter>

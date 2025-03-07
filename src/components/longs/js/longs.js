@@ -25,7 +25,10 @@ export default function LongsComp() {
     <div className="container">
       <div className="videos-page-main-container">
         <TopNav pageNumber={1} />
-        <div className="page-title">TOP VIDEOS</div>
+        <div className="page-title-main-container">
+          <div className="page-title">TOP VIDEOS</div>
+          <div className="live-video-status-updates-container"><span></span> Live Video Status Update</div>
+        </div>
         <div className="middle-part-videos-page-main-container">
           {/* Video 1 */}
           <div className="video-holder-main-container">
@@ -63,7 +66,7 @@ export default function LongsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                {urySubs.subscribers} subscribers
+                <div className="subscribers-count">{urySubs.subscribers}</div> subscribers
               </div>
             </div>
           </div>
@@ -104,7 +107,8 @@ export default function LongsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                {urySubs.subscribers} subscribers
+                <div className="subscribers-count">{urySubs.subscribers}</div>
+                 subscribers
               </div>
             </div>
           </div>
@@ -145,7 +149,8 @@ export default function LongsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                {beterSubs.subscribers} subscribers
+                <div className="subscribers-count">{beterSubs.subscribers}</div>
+                 subscribers
               </div>
             </div>
           </div>

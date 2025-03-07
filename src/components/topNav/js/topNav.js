@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useRef, useContext } from "react";
 import { UseContextValues } from "../../../App";
 export default function TopNav(props) {
-  const triggerTransPage = useContext(UseContextValues);
+  const info = useContext(UseContextValues);
   const nav = useNavigate();
   const [showBottomNavState, setShowBottomNavState] = useState(false);
   const [bottomNavGoDown, setBottomNavGoDown] = useState(null);
@@ -13,6 +13,14 @@ export default function TopNav(props) {
   function showBottomNav() {
     setShowBottomNavState(true);
     activeBottomNavTrap();
+  }
+
+  function navToPage(path) {
+    info.pageTransitionUp();
+    setTimeout(() => {
+      nav(path);
+      info.pageTransitionDown();
+    },info.transDelayTime);
   }
 
   function activeBottomNavTrap() {
@@ -54,7 +62,7 @@ export default function TopNav(props) {
           <i class="fa-solid fa-bars"></i>
         </div>
         <div
-          onClick={() => nav("/")}
+          onClick={() => navToPage("/")}
           className={`top-nav-navigation-option can-hide ${
             props.pageNumber === 0 ? "top-nav-navigation-option-active" : ""
           }`}
@@ -62,7 +70,7 @@ export default function TopNav(props) {
           Home
         </div>
         <div
-          onClick={() => nav("/videos")}
+          onClick={() => navToPage("/videos")}
           className={`top-nav-navigation-option can-hide ${
             props.pageNumber === 1 ? "top-nav-navigation-option-active" : ""
           }`}
@@ -70,7 +78,7 @@ export default function TopNav(props) {
           Videos
         </div>
         <div
-          onClick={() => {nav("/shorts")}}
+          onClick={() => {navToPage("/shorts")}}
           className={`top-nav-navigation-option can-hide ${
             props.pageNumber === 2 ? "top-nav-navigation-option-active" : ""
           }`}

@@ -16,14 +16,16 @@ export default function ShortsComp() {
     setCenterSecond(videoInfo.gamingCenterSecondShort);
     setCenterThird(videoInfo.gamingCenterThirdShort);
     setCenterSubs(videoInfo.gamingCenterSubs);
-    videoInfo.pageTransition();
   }, [videoInfo.fetchingResult]);
 
   return (
     <div className="container">
       <div className="videos-page-main-container">
         <TopNav pageNumber={2} />
-        <div className="page-title">TOP SHORTS</div>
+        <div className="page-title-main-container">
+          <div className="page-title">TOP SHORTS</div>
+          <div className="live-video-status-updates-container"><span></span> Live Short Status Update</div>
+        </div>
         <div className="middle-part-videos-page-main-container">
           {/* Video 1 */}
           <div className="short-holder-main-container">
@@ -32,7 +34,7 @@ export default function ShortsComp() {
                 <iframe
                   width="100%"
                   height="235"
-                  src="https://www.youtube.com/embed/7cc3UlVGMFI?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/7cc3UlVGMFI?autoplay=1&mute=1&loop=1&playlist=7cc3UlVGMFI"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -61,7 +63,8 @@ export default function ShortsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                {centerSubs.subscribers} subscribers
+                <div className="subscribers-count">{centerSubs.subscribers}</div>
+                 subscribers
               </div>
             </div>
           </div>
@@ -73,7 +76,7 @@ export default function ShortsComp() {
                 <iframe
                   width="100%"
                   height="235"
-                  src="https://www.youtube.com/embed/O6iftECQvJk?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/O6iftECQvJk?autoplay=1&mute=1&loop=1&playlist=O6iftECQvJk"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -102,7 +105,8 @@ export default function ShortsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                {centerSubs.subscribers} subscribers
+                <div className="subscribers-count">{centerSubs.subscribers}</div>
+                 subscribers
               </div>
             </div>
           </div>
@@ -114,7 +118,7 @@ export default function ShortsComp() {
                 <iframe
                   width="100%"
                   height="235"
-                  src="https://www.youtube.com/embed/9Dot_x3EijQ?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/9Dot_x3EijQ?autoplay=1&mute=1&loop=1&playlist=9Dot_x3EijQ"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -143,7 +147,8 @@ export default function ShortsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                {centerSubs.subscribers} subscribers
+                <div className="subscribers-count">{centerSubs.subscribers}</div>
+                 subscribers
               </div>
             </div>
           </div>
