@@ -4,14 +4,14 @@
   justify-content: space-between;
   min-height: calc(100vh - 20px);
   width: 100%;
-  padding-bottom: 90px ; 
+  padding-bottom: 90px;
 }
 
 .middle-part-home-page-main-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 @media (max-width: 992px) {
@@ -56,7 +56,6 @@
   .home-page-editor-information {
     align-items: center;
   }
-
 }
 
 .about-person-middle-part-home-page {
@@ -64,8 +63,6 @@
   font-weight: bold;
   color: white;
 }
-
-
 
 @media (max-width: 992px) {
   .about-person-middle-part-home-page {
@@ -85,7 +82,7 @@
 }
 
 @media (max-width: 992px) {
-  .bottom-part-information-about-person-job{
+  .bottom-part-information-about-person-job {
     text-align: center;
   }
 }
@@ -215,14 +212,10 @@
 }
 
 .home-page-bottom-part-information-main-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 992px) {
-    .home-page-bottom-part-information-main-container {
-        flex-direction: column;
-    }
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
 }
 
 .bottom-part-information-inner-info {
@@ -247,21 +240,21 @@
 }
 
 .job-type-home-page {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .email-copied {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    color: black;
-    font-weight: bold;
-    border-radius: 20px;
-    pointer-events: none;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: 0.2s;
-    z-index: 7;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  pointer-events: none;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 7;
 }
