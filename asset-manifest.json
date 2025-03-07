@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tntPortfolio/static/css/main.917382c1.css",
-    "main.js": "/tntPortfolio/static/js/main.724d8ac3.js",
+    "main.css": "/tntPortfolio/static/css/main.306b139b.css",
+    "main.js": "/tntPortfolio/static/js/main.b058bc3c.js",
     "static/js/488.d6a4740c.chunk.js": "/tntPortfolio/static/js/488.d6a4740c.chunk.js",
     "static/media/editorImage.png": "/tntPortfolio/static/media/editorImage.da72053aa6559c01902f.png",
     "static/media/fa-solid-900.ttf": "/tntPortfolio/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
@@ -13,12 +13,12 @@
     "static/media/fa-v4compatibility.ttf": "/tntPortfolio/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/tntPortfolio/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/tntPortfolio/index.html",
-    "main.917382c1.css.map": "/tntPortfolio/static/css/main.917382c1.css.map",
-    "main.724d8ac3.js.map": "/tntPortfolio/static/js/main.724d8ac3.js.map",
+    "main.306b139b.css.map": "/tntPortfolio/static/css/main.306b139b.css.map",
+    "main.b058bc3c.js.map": "/tntPortfolio/static/js/main.b058bc3c.js.map",
     "488.d6a4740c.chunk.js.map": "/tntPortfolio/static/js/488.d6a4740c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.917382c1.css",
-    "static/js/main.724d8ac3.js"
+    "static/css/main.306b139b.css",
+    "static/js/main.b058bc3c.js"
   ]
 }
