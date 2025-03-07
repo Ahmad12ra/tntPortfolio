@@ -52,10 +52,23 @@
   color: white;
 }
 
+@media (max-width: 992px) {
+  .home-page-editor-information {
+    align-items: center;
+  }
+
+}
+
 .about-person-middle-part-home-page {
   font-size: 55px;
   font-weight: bold;
   color: white;
+}
+
+@media (max-width: 992px) {
+  .about-person-middle-part-home-page {
+    text-align: center;
+  }
 }
 
 .about-person-middle-part-home-page span {
@@ -66,6 +79,12 @@
   color: white;
   opacity: 0.9;
   font-size: 19px;
+}
+
+@media (max-width: 992px) {
+  .bottom-part-information-about-person-job{
+    text-align: center;
+  }
 }
 
 .bottom-part-home-page-contact-types {
@@ -95,8 +114,8 @@
 }
 
 .home-page-editor-picture-main-container {
-  width: 500px;
-  height: 500px;
+  width: 430px;
+  height: 430px;
   background-color: var(--main-background-color);
   border-radius: 50%;
   position: relative;
@@ -183,6 +202,7 @@
   border-radius: 194px;
   height: 415px;
   overflow: hidden;
+  gap: 26px;
 }
 
 .editor-image {
@@ -210,14 +230,14 @@
 }
 
 .number-inner-inner-info-bottom-part-home-page {
-  font-size: 120px;
+  font-size: 68px;
   font-weight: bold;
   color: var(--secondary-color);
 }
 
 .text-infor-inner-inner-info-bottom-part-home-page {
   color: #ffffffe3;
-  font-size: 22px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;

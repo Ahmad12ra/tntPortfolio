@@ -1,0 +1,17 @@
+.shorts-page-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 20px);
+    width: 100%;
+}
+
+.middle-part-shorts-page-mian-container {
+    display: grid;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.short-holder-main-container {
+    position: relative;
+}

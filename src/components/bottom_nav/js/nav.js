@@ -44,19 +44,19 @@ export default function BottomNav(props) {
         >
           <div
             onClick={() => nav("/")}
-            className="bottom-nav-navigation-content bottom-nav-navigation-content-active"
+            className={`bottom-nav-navigation-content ${props.pageNumber === 0 ? "bottom-nav-navigation-content-active" : ""}`}
           >
             Home
           </div>
           <div
-            onClick={() => nav("/longs")}
-            className="bottom-nav-navigation-content"
+            onClick={() => nav("/videos")}
+            className={`bottom-nav-navigation-content ${props.pageNumber === 1 ? "bottom-nav-navigation-content-active" : ""}`}
           >
-            Longs
+            Videos
           </div>
           <div
             onClick={() => nav("/shorts")}
-            className="bottom-nav-navigation-content"
+            className={`bottom-nav-navigation-content ${props.pageNumber === 2 ? "bottom-nav-navigation-content-active" : ""}`}
           >
             Shorts
           </div>

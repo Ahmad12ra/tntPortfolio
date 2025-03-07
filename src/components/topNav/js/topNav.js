@@ -1,8 +1,10 @@
 import "../css/topNav.css";
 import BottomNav from "../../bottom_nav/js/nav";
 import { useNavigate } from "react-router-dom";
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import { UseContextValues } from "../../../App";
 export default function TopNav(props) {
+  const triggerTransPage = useContext(UseContextValues);
   const nav = useNavigate();
   const [showBottomNavState, setShowBottomNavState] = useState(false);
   const [bottomNavGoDown, setBottomNavGoDown] = useState(null);
@@ -40,7 +42,7 @@ export default function TopNav(props) {
   return (
     <div className="top-nav-main-container">
       <div ref={bottomNavTrap} className="bottom-nav-trap-overlay"></div>
-      <BottomNav show={showBottomNavState} goDown={bottomNavGoDown} />
+      <BottomNav show={showBottomNavState} pageNumber={props.pageNumber} goDown={bottomNavGoDown} />
       <div className="top-nav-logo-main-container">
         <span className="logo-name">Ahmed</span>
         <span className="dot-after-logo-name">
@@ -60,15 +62,15 @@ export default function TopNav(props) {
           Home
         </div>
         <div
-          onClick={() => nav("/longs")}
+          onClick={() => nav("/videos")}
           className={`top-nav-navigation-option can-hide ${
             props.pageNumber === 1 ? "top-nav-navigation-option-active" : ""
           }`}
         >
-          Longs
+          Videos
         </div>
         <div
-          onClick={() => nav("/shorts")}
+          onClick={() => {nav("/shorts")}}
           className={`top-nav-navigation-option can-hide ${
             props.pageNumber === 2 ? "top-nav-navigation-option-active" : ""
           }`}

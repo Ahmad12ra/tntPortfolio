@@ -1,0 +1,103 @@
+.videos-page-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 20px);
+    width: 100%;
+}
+
+.middle-part-videos-page-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    gap: 60px;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+    .middle-part-videos-page-main-container {
+        flex-direction: column;
+        
+    }
+}
+
+.video-holder-main-container {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.video-holder-main-container:hover .vieo-status-part-inner-video-holder {
+    border: 2px solid var(--secondary-color);
+    transition: 0s;
+    
+}
+
+.vieo-part-inner-video-holder {
+    width: 80%;
+    height: 80%;
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.vieo-status-part-inner-video-holder {
+    width: 80%;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #252525;
+    border: 2px solid #6f6f6f;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s;
+    
+}
+
+.right-part-container-video-status-inner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px 0px 0px;
+    justify-content: center;
+    align-content: center;
+}
+
+.right-part-inner-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-part-inner-inner-container div{
+    width: fit-content;
+    color: var(--secondary-color);
+}
+
+.right-part-inner-count {
+    color: var(--third-color) !important;
+}
+
+.bottom-part-subscribers-main-container {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5px;
+    gap: 10px;
+    color: var(--secondary-color);
+}

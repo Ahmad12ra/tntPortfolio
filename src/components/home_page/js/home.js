@@ -23,7 +23,7 @@ export default function HomePage() {
           <div className="home-page-editor-information">
             <div className="job-type-home-page">Video Editor</div>
             <div className="about-person-middle-part-home-page">
-              Hello I'm <br /> <span> Ahmed Alsayed</span>
+              Hello I'm <br /> <span> Ahmed Elsayed</span>
             </div>
             <div className="bottom-part-information-about-person-job">
               I excel at video editing <br /> as I have many experinces in that
@@ -50,12 +50,16 @@ export default function HomePage() {
             <div className="text-infor-inner-inner-info-bottom-part-home-page">years of <br/> experince</div>
           </div>
           <div className="bottom-part-information-inner-info">
-            <div className="number-inner-inner-info-bottom-part-home-page">8</div>
+            <div className="number-inner-inner-info-bottom-part-home-page">60+</div>
             <div className="text-infor-inner-inner-info-bottom-part-home-page">projects <br/> completed</div>
           </div>
           <div className="bottom-part-information-inner-info">
-            <div className="number-inner-inner-info-bottom-part-home-page">3</div>
+            <div className="number-inner-inner-info-bottom-part-home-page">10</div>
             <div className="text-infor-inner-inner-info-bottom-part-home-page">creators  <br/>worked with</div>
+          </div>
+          <div className="bottom-part-information-inner-info">
+            <div className="number-inner-inner-info-bottom-part-home-page">20M+</div>
+            <div className="text-infor-inner-inner-info-bottom-part-home-page">total <br/> channels subscribers</div>
           </div>
         </div>
       </div>
