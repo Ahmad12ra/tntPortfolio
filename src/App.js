@@ -113,7 +113,8 @@ function App() {
           beterSubs,
           urySubs,
           gamingCenterSubs,
-          fetchingResult
+          fetchingResult,
+          pageTransition
         }}
       >
         <HashRouter>

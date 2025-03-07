@@ -2,7 +2,6 @@ import { useEffect, useContext, useState } from "react";
 import TopNav from "../../topNav/js/topNav";
 import "../css/longs.css";
 import { UseContextValues } from "../../../App";
-import YouTubePlayer from "../../youtubeApi";
 
 export default function LongsComp() {
   const videoInfo = useContext(UseContextValues);
@@ -32,7 +31,15 @@ export default function LongsComp() {
           <div className="video-holder-main-container">
             <div className="vieo-part-inner-video-holder">
               <div className="image-thumnail">
-                <YouTubePlayer videoId="5vBALv08_Rg" playerId="youtube-player-1" />
+                <iframe
+                  width="100%"
+                  height="135"
+                  src="https://www.youtube.com/embed/5vBALv08_Rg?autoplay=1&mute=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
             <div className="vieo-status-part-inner-video-holder">
@@ -65,7 +72,15 @@ export default function LongsComp() {
           <div className="video-holder-main-container">
             <div className="vieo-part-inner-video-holder">
               <div className="image-thumnail">
-                <YouTubePlayer videoId="NIZzyjJch14" playerId="youtube-player-2" />
+                <iframe
+                  width="100%"
+                  height="135"
+                  src="https://www.youtube.com/embed/NIZzyjJch14?autoplay=1&mute=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
             <div className="vieo-status-part-inner-video-holder">
@@ -98,7 +113,15 @@ export default function LongsComp() {
           <div className="video-holder-main-container">
             <div className="vieo-part-inner-video-holder">
               <div className="image-thumnail">
-                <YouTubePlayer videoId="END0JE8ankw" playerId="youtube-player-3" />
+                <iframe
+                  width="100%"
+                  height="135"
+                  src="https://www.youtube.com/embed/END0JE8ankw?autoplay=1&mute=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
             <div className="vieo-status-part-inner-video-holder">

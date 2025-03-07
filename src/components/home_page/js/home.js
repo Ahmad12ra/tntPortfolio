@@ -1,9 +1,8 @@
 import TopNav from "../../topNav/js/topNav.js";
 import "../css/home.css";
 import editorImage from "../../../images/editorImage.png";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 export default function HomePage() {
-
   const emailCopied = useRef(null);
 
   function emailConfigrationFunc(email) {
@@ -12,7 +11,9 @@ export default function HomePage() {
     emailCopied.current.style.cssText = "opacity: 1; top: 30px";
     setTimeout(() => emailCopied.current.style.cssText = "opacity: 0; top: 20px",2000);
 
+    
   }
+
 
   return (
     <div className="container">

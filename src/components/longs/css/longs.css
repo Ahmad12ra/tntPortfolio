@@ -28,7 +28,6 @@
   position: relative;
   width: 310px;
   height: 180px;
-  cursor: pointer;
 }
 
 .video-holder-main-container::after {
