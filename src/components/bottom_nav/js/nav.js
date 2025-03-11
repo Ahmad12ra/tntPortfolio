@@ -70,11 +70,12 @@ export default function BottomNav(props) {
           >
             Shorts
           </div>
-          <a
-          href="https://www.instagram.com/tntyt_1/"
-          target="_blank"
-          rel="noopener noreferrer"
-           className="bottom-nav-navigation-content-me">Contact Me</a>
+          <div
+            onClick={() => navToPage("/programs")}
+            className={`bottom-nav-navigation-content ${props.pageNumber === 3 ? "bottom-nav-navigation-content-active" : ""}`}
+          >
+            Programs
+          </div>
         </div>
       </div>
     );

@@ -4,6 +4,7 @@ import ErrorPage from "./components/error_page/js/error";
 import LongsComp from "./components/longs/js/longs";
 import ShortsComp from "./components/shorts/js/shorts";
 import PricesComp from "./components/prices/js/prices";
+import ProgramsComp from "./components/programs_page/js/programs";
 import { useEffect, useState, useRef, createContext } from "react";
 import shortenNumber from "./components/shortenNumber";
 import "./css/all.css";
@@ -22,9 +23,7 @@ function App() {
   const [gamingCenterSubs, setGamingCenterSubs] = useState({});
   const [urySubs, setUrySubs] = useState({});
   const [fetchingResult, setFetchingResult] = useState(0);
-  const [transDelayTime, setTransDelaytime] = useState(0);
-
-  useEffect(() => setTransDelaytime(500), [])
+  const transDelayTime = 500;
 
   function pageTransitionUp() {
     Array.from(pageTransMainContainer.current.children).forEach((ele, ind) => {
@@ -119,6 +118,7 @@ function App() {
             <Route path="/videos" element={<LongsComp />} />
             <Route path="/shorts" element={<ShortsComp />} />
             <Route path="/prices" element={<PricesComp />} />
+            <Route path="/programs" element={<ProgramsComp />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </HashRouter>
@@ -138,6 +138,14 @@ function App() {
         <div className="page-trans-inner-baby"></div>
         <div className="page-trans-inner-baby"></div>
       </div>
+      <a
+          href="https://www.instagram.com/tntyt_1/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-me"
+        >
+          Contact Me
+        </a>
     </>
   );
 }

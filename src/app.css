@@ -16,6 +16,7 @@
   box-sizing: border-box;
   user-select: none;
   text-decoration: none;
+  font-size: 16px;
 }
 
 body {
@@ -83,6 +84,22 @@ body {
   color: white !important;
 }
 
-* {
-  font-size: 16px;
+.contact-me {
+  font-weight: bold;
+  background-color: #01fe9d12;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 10px 15px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.contact-me:hover {
+  color: black;
+  background-color: var(--secondary-color);
+  transition: 0s;
 }

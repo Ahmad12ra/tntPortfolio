@@ -85,14 +85,22 @@ export default function TopNav(props) {
         >
           Shorts
         </div>
-        <a
+        <div
+          onClick={() => {navToPage("/programs")}}
+          className={`top-nav-navigation-option can-hide ${
+            props.pageNumber === 3 ? "top-nav-navigation-option-active" : ""
+          }`}
+        >
+          Programs
+        </div>
+        {/* <a
           href="https://www.instagram.com/tntyt_1/"
           target="_blank"
           rel="noopener noreferrer"
           className="top-nav-contact-option can-hide"
         >
           Contact Me
-        </a>
+        </a> */}
       </div>
     </div>
   );
