@@ -21,7 +21,6 @@ function App() {
   const [gamingCenterThirdShort, setGamingCenterThirdShort] = useState({});
   const [beterSubs, setBeterSubs] = useState({});
   const [gamingCenterSubs, setGamingCenterSubs] = useState({});
-  const [urySubs, setUrySubs] = useState({});
   const [fetchingResult, setFetchingResult] = useState(0);
   const transDelayTime = 500;
 
@@ -77,13 +76,12 @@ function App() {
     }
   
     useEffect(() => {
-      getVideoDetails("END0JE8ankw",  setBeterVideo);
+      getVideoDetails("KU0f5CrmTic",  setBeterVideo);
       getChannelDetails("UCXerYgG342gmfpTahEzbgRA", setBeterSubs);
 
-      getVideoDetails("NIZzyjJch14", setUryFirstVideo);
-      getChannelDetails("UCY97TTrIVF1mvpYo0YcgbcQ", setUrySubs);
+      getVideoDetails("qQ8W96cNUBU", setUryFirstVideo);
 
-      getVideoDetails("5vBALv08_Rg", setUrySecondVideo);
+      getVideoDetails("OMZGAVpNxKc", setUrySecondVideo);
 
       getVideoDetails("O6iftECQvJk",setGamingCenterFirstShort);
       getChannelDetails("UCFx3j0DLkcCU3aTKJnb8-Ug", setGamingCenterSubs);
@@ -104,7 +102,6 @@ function App() {
           gamingCenterSecondShort,
           gamingCenterThirdShort,
           beterSubs,
-          urySubs,
           gamingCenterSubs,
           fetchingResult,
           pageTransitionUp,

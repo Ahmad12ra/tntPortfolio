@@ -7,7 +7,7 @@ export default function LongsComp() {
   const videoInfo = useContext(UseContextValues);
   const [uryFirstVideo, setUryFirstVideo] = useState({});
   const [urySecondVideo, setUrySecondVideo] = useState({});
-  const [urySubs, setUrySubs] = useState({});
+  const [gamingCenterSubs, setGamingCenterSubs] = useState({});
   const [beterVideo, setBeterVideo] = useState({});
   const [beterSubs, setBeterSubs] = useState({});
 
@@ -15,7 +15,7 @@ export default function LongsComp() {
     console.log(videoInfo);
     setUryFirstVideo(videoInfo.uryFirstVideo);
     setUrySecondVideo(videoInfo.urySecondVideo);
-    setUrySubs(videoInfo.urySubs);
+    setGamingCenterSubs(videoInfo.gamingCenterSubs);
 
     setBeterVideo(videoInfo.beterVideo);
     setBeterSubs(videoInfo.beterSubs);
@@ -37,7 +37,7 @@ export default function LongsComp() {
                 <iframe
                   width="100%"
                   height="135"
-                  src="https://www.youtube.com/embed/5vBALv08_Rg?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/gCm7hSNKn2c?autoplay=1&mute=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -66,7 +66,7 @@ export default function LongsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                <div className="subscribers-count">{urySubs.subscribers}</div> subscribers
+                <div className="subscribers-count">{gamingCenterSubs.subscribers}</div> subscribers
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function LongsComp() {
                 <iframe
                   width="100%"
                   height="135"
-                  src="https://www.youtube.com/embed/NIZzyjJch14?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/I1O0ZBl2cNM?autoplay=1&mute=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -107,7 +107,7 @@ export default function LongsComp() {
               </div>
               <div className="bottom-part-subscribers-main-container">
                 <i className="fa-brands fa-youtube"></i>
-                <div className="subscribers-count">{urySubs.subscribers}</div>
+                <div className="subscribers-count">{gamingCenterSubs.subscribers}</div>
                  subscribers
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function LongsComp() {
                 <iframe
                   width="100%"
                   height="135"
-                  src="https://www.youtube.com/embed/END0JE8ankw?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/ltFq2stdskk?autoplay=1&mute=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
