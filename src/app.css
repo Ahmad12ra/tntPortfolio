@@ -75,7 +75,7 @@ body {
 
 .page-trans-inner-baby {
   background-color: white;
-  height: 0%;
+  height: 100%;
   transition: .3s;
 }
 

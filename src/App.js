@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes, useFetcher } from "react-router-dom";
 import HomePage from "./components/home_page/js/home";
 import ErrorPage from "./components/error_page/js/error";
 import LongsComp from "./components/longs/js/longs";
@@ -23,6 +23,15 @@ function App() {
   const [gamingCenterSubs, setGamingCenterSubs] = useState({});
   const [fetchingResult, setFetchingResult] = useState(0);
   const transDelayTime = 500;
+  const contactMeButton = useRef(null);
+
+  // slide contact me button transition
+  useEffect(() => {
+    setTimeout(() => contactMeButton.current.style.cssText = "left: 20px", 2000);
+  }, [])
+
+  // slide down page transition after visiting website
+  useEffect(() => setTimeout(() => pageTransitionDown(), 600),[])
 
   function pageTransitionUp() {
     Array.from(pageTransMainContainer.current.children).forEach((ele, ind) => {
@@ -136,10 +145,12 @@ function App() {
         <div className="page-trans-inner-baby"></div>
       </div>
       <a
+          ref={contactMeButton}
           href="https://www.instagram.com/tntyt_1/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-me"
+          style={{left: "-100%"}}
         >
           Contact Me
         </a>
